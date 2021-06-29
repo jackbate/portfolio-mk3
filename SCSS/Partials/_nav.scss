@@ -1,0 +1,78 @@
+.navbar{
+    width: 13vw;
+    height: 100%;
+    background-color: $secondary;
+    border-right: 4px $darkerblue solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.nav{
+    &-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        a{
+            text-decoration: none;
+        }
+    }
+    &-letter{
+        text-align: center;
+        color: $primary;
+        padding-bottom: 5vh;
+        font-size: 45px;
+        width: 100%;
+        height: 15vh;
+        border-bottom: 3px $darkerblue solid;
+        h2{
+            margin: 4vh 0 0;
+        }
+        a{
+            color: $primary;
+            &:hover{
+                color: $darkestblue;
+            }
+        }
+        
+    }
+    &-items{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 30px;
+        padding-bottom: 30px;
+        align-items: center;
+        border-bottom: 3px $darkerblue solid;
+        border-width: 100%;
+        a{
+            color: $darkestblue;
+            margin-top: 15px;
+            // width: 80%;
+            &:hover{
+                border-bottom: 2px $primary solid;
+                border-width: 50%;
+            }
+        }
+    }
+    &-social{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    &-fb{
+        font-size: 40px;
+        color: $primary;
+        &:hover{
+            color: $facebook;
+        }
+    }
+    &-li{
+        font-size: 40px;
+        color: $primary;
+        &:hover{
+            color: $linkedin;
+        }
+    }
+}

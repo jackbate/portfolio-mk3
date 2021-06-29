@@ -1,0 +1,90 @@
+.image-container{
+    overflow: hidden;
+    width: 30vw;
+    height: fit-content;
+    border: 1px red solid;
+    img{
+        transition: transform .5s ease;
+        &:hover{
+            transform: scale(1.1);
+            opacity: .75;
+        }
+    }
+
+}
+
+.project{
+    &-background{
+        background-color: $tertiary;
+        padding: 10px 0px;
+    }
+    &-title{
+        margin-bottom: 10px;
+    }
+    &-container{
+        padding: 0px 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    &-box{
+        width: 85vw;
+        // 340px
+        border: 3px $tertiary solid;
+        background-color: $secondary;
+        text-align: center;
+        margin: 5px 10px;
+        border-radius: 15px;
+        border-color: $secondary;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        -webkit-box-shadow: 0px 14px 34px -4px rgba(0,0,0,0.3); 
+        box-shadow: 0px 14px 34px -4px rgba(0,0,0,0.3); 
+        @media (min-width:768px){
+            width: 40vw;
+        }
+        @media (min-width:998px){
+            width: 34vw;
+        }
+        @media (min-width:1208px){
+            width: 340px;
+        }
+    }
+    &-desc{
+        h3{
+            color: $darkestblue;
+        }
+        p{
+            color: $darkestblue;
+            line-height: 0.9;
+            letter-spacing: 0.6px;
+        }
+    }
+    &-link{
+        text-decoration: none;
+        color: $darkestblue;
+        &::after{
+            content: ' \2192';
+        }
+        &:hover{
+            color: $primary;
+        }
+        
+    }
+}
+
+.project-img{
+    width: 80vw;
+    border-radius: 5px;
+    @media (min-width:768px){
+        width: 40vw;
+    }
+    @media (min-width:998px){
+        width: 34vw;
+    }
+    @media (min-width:1208px){
+        width: 340px;
+    }
+    
+}
+

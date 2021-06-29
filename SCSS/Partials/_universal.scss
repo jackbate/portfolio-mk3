@@ -1,0 +1,50 @@
+body{
+    font-family: 'Roboto Mono', monospace;
+    background-color: $secondary;
+    a{
+        &:hover{
+            border-color: transparent;
+        }
+    }
+}
+
+.section-title{
+    text-transform: capitalize;
+    color: $darkestblue;
+    border-bottom: 5px $darkerblue solid;
+    width: 120px;
+    text-align: center;
+    margin: 10px auto 0;
+    
+    @media (min-width:1208px){
+        text-align: left;
+        margin: 0;
+        margin-top: 10px;
+    }
+}
+
+.scroll-up{
+    display: none;
+    text-align: center;
+    text-decoration: none;
+    color: $darkestblue;
+    @media (min-width:1208px){
+        display: inherit;
+    }
+    a{
+        margin-top: 5px;
+    }
+}
+
+.content-wrapper{
+    width: 90vw;
+    margin: 0 auto;
+    @media(min-width:998px){
+        width: 80vw;
+    }
+    @media (min-width:1208px){
+        width: 1200px;
+        margin: 0 auto 0 25%;
+    }
+    
+}

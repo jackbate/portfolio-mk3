@@ -1,0 +1,131 @@
+.contact{
+    &-background{
+        background-color: $tertiary;
+        padding: 10px 0px;
+    }
+    &-section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    &-title{
+        width: 150px;
+        @media (min-width:768px){
+            margin-right: 100%;
+        }
+        @media (min-width:1208px){
+            margin-right: 0;
+        }
+    }
+
+    &-details{
+        width: 100%;
+        text-align: center;
+        h2{
+            color: $primary;
+        }
+        p{
+            margin: 0 auto;
+            width: 80%;
+            line-height: 0.9;
+            color: $darkestblue;
+            @media (min-width:768px){
+                margin: 0;
+            }
+        }
+        h3{
+            color: $primary;
+        }
+        a{
+            text-decoration: none;
+            color: $darkerblue;
+            font-size: 15px;
+            &:hover{
+                color: $darkestblue;
+            }
+            @media(min-width:280px){
+                font-size: 20px;
+            }
+        }
+        @media (min-width:768px){
+            width: 40%;
+            text-align: left;
+        }
+    }
+    &-form{
+        display: none;
+        @media (min-width:768px){
+            display: flex;
+            width: 60%;
+            text-align: center;
+            flex-direction: column;
+        }
+    }
+    &-fname{
+        background-color: $grey;
+        border-radius: 5px;
+        border: 1px $grey solid;
+        height: 20px;
+        width: 45%;
+        @media (min-width:768px){
+            margin-right: 0px;
+        }
+        @media (min-width:1208px){
+            margin-right: 4px;
+        }
+    }
+    &-lname{
+        width: 45%;
+        background-color: $grey;
+        border-radius: 5px;
+        border: 1px $grey solid;
+        height: 20px;
+        @media (min-width:768px){
+            margin-left: 0px;
+        }
+        @media (min-width:1208px){
+            margin-left: 3px;
+        }
+    }
+
+    &-email{
+        margin-top: 10px;
+        width: 93%;
+        background-color: $grey;
+        border-radius: 5px;
+        border: 1px $grey solid;
+        height: 20px;
+    }
+
+    &-subject{
+        margin-top: 10px;
+        width: 93%;
+        background-color: $grey;
+        border-radius: 5px;
+        border: 1px $grey solid;
+        height: 20px;
+    }
+
+    &-message{
+        margin-top: 10px;
+        width: 93%;
+        background-color: $grey;
+        border-radius: 5px;
+        border: 1px $grey solid;
+        height: 200px;
+    }
+
+    &-submit{
+        margin-top: 5px;
+        background-color: $tertiary;
+        color: $primary;
+        width: 80px;
+        height: 30px;
+        border: 1px $primary solid;
+        border-radius: 5px;
+        &:hover{
+            background-color: $primary;
+            color: $tertiary;
+        }
+    }
+}
