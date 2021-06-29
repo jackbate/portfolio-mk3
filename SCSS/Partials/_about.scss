@@ -1,10 +1,20 @@
 .about{
     &-background{
         background-color: $secondary;
+        margin-top: 15vh;
+    }
+    &-title{
+        width: 270px;
+        text-align: center;
+        margin: 0 auto 70px;
+        @media (min-width:1400px){
+            margin-left: 50%;
+        }
     }
     &-container{
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         margin-bottom: 20px;
         padding: 10px 0px;
         @media (min-width:768px){
@@ -43,6 +53,16 @@
         margin-top: 10px;
         @media (min-width:768px){
             margin-top: 50px;
+        }
+    }
+    &-cv{
+        margin-top: 30px;
+        a{
+            text-decoration: none;
+            color: $darkestblue;
+            &:hover{
+                color: $darkerblue;
+            }
         }
     }
 }

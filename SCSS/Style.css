@@ -44,6 +44,10 @@ table {
 }
 
 /* /CSS reset */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto Mono', monospace;
   background-color: #FEFFFF;
@@ -101,6 +105,42 @@ body a:hover {
 @media (min-width: 1208px) {
   .content-wrapper {
     width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1400px) {
+  .content-wrapper {
+    margin: 0 auto 0 15%;
+  }
+}
+
+@media (min-width: 1500px) {
+  .content-wrapper {
+    margin: 0 auto 0 17%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .content-wrapper {
+    margin: 0 auto 0 20%;
+  }
+}
+
+@media (min-width: 1700px) {
+  .content-wrapper {
+    margin: 0 auto 0 22%;
+  }
+}
+
+@media (min-width: 1800px) {
+  .content-wrapper {
+    margin: 0 auto 0 23%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .content-wrapper {
     margin: 0 auto 0 25%;
   }
 }
@@ -211,12 +251,31 @@ header {
     display: block;
     position: absolute;
     top: 86%;
+    right: 45.7%;
+  }
+}
+
+@media (min-width: 1208px) and (min-width: 1400px) {
+  .scroll {
     right: 40%;
   }
 }
 
 .about-background {
   background-color: #FEFFFF;
+  margin-top: 15vh;
+}
+
+.about-title {
+  width: 270px;
+  text-align: center;
+  margin: 0 auto 70px;
+}
+
+@media (min-width: 1400px) {
+  .about-title {
+    margin-left: 50%;
+  }
 }
 
 .about-container {
@@ -227,6 +286,8 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 20px;
   padding: 10px 0px;
 }
@@ -297,6 +358,19 @@ header {
   .about-2 {
     margin-top: 50px;
   }
+}
+
+.about-cv {
+  margin-top: 30px;
+}
+
+.about-cv a {
+  text-decoration: none;
+  color: #17252A;
+}
+
+.about-cv a:hover {
+  color: #2B7A78;
 }
 
 .image-container {
@@ -656,14 +730,21 @@ header {
 }
 
 .navbar {
-  width: 13vw;
-  height: 100%;
-  background-color: #FEFFFF;
-  border-right: 4px #2B7A78 solid;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
+  display: none;
+}
+
+@media (min-width: 1400px) {
+  .navbar {
+    display: block;
+    width: 13vw;
+    height: 100%;
+    background-color: #FEFFFF;
+    border-right: 4px #2B7A78 solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
 }
 
 .nav-container {
@@ -721,6 +802,14 @@ header {
           align-items: center;
   border-bottom: 3px #2B7A78 solid;
   border-width: 100%;
+}
+
+.nav-items .selected {
+  color: #3AAfA9;
+}
+
+.nav-items .selected:hover {
+  border: none;
 }
 
 .nav-items a {
