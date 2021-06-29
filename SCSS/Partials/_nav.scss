@@ -23,6 +23,28 @@
             text-decoration: none;
         }
     }
+    &-menu{
+        position: fixed;
+        z-index: 1;
+        top: 10px;
+        left: 10px;
+        width: 45px;
+        height: 40px;
+        font-size: 25px;
+        background-color: $darkerblue;
+        color: $tertiary;
+        text-align: center;
+        border-radius: 10px;
+        padding-top: 5px;
+        &:hover{
+            color: $darkerblue;
+            background-color: $tertiary;
+        }
+        @media (min-width:1400px){
+            display: none;
+        }
+
+    }
     &-letter{
         text-align: center;
         color: $primary;
