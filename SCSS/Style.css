@@ -409,13 +409,19 @@ header {
 
 @media (min-width: 998px) {
   .project-background {
-    height: 155vh;
+    height: 120vh;
   }
 }
 
 @media (min-width: 1208px) {
   .project-background {
-    height: 120vh;
+    height: 103vh;
+  }
+}
+
+@media (min-width: 1400px) {
+  .project-background {
+    height: 85vh;
   }
 }
 
@@ -491,6 +497,70 @@ header {
   color: #3AAfA9;
 }
 
+.project-languages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.project-languages div {
+  width: 35%;
+  color: #17252A;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.project-languages div i {
+  font-size: 25px;
+}
+
+.project-languages div h4 {
+  font-size: 0.5rem;
+}
+
+.project-html {
+  background-color: #fff;
+}
+
+.project-html i {
+  color: #f06529;
+}
+
+.project-css {
+  background-color: #fff;
+}
+
+.project-css i {
+  color: #264de4;
+}
+
+.project-java {
+  background-color: #fff;
+}
+
+.project-java i {
+  color: #F0DB4F;
+}
+
+.project-java div {
+  background-color: #17252A;
+  padding: 3px 5px 2px 4px;
+  margin: 0 auto;
+}
+
 .project-img {
   width: 80vw;
   border-radius: 5px;
@@ -516,7 +586,7 @@ header {
 
 .flip-card {
   width: 85vw;
-  height: 44vh;
+  height: 38vh;
   border: 3px #DEF2F1 solid;
   background-color: #FEFFFF;
   text-align: center;
@@ -524,29 +594,34 @@ header {
   border-radius: 15px;
   border-color: #FEFFFF;
   margin: 0 auto;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   border: 1px solid transparent;
   -webkit-perspective: 1000px;
           perspective: 1000px;
 }
 
+@media (min-width: 600px) {
+  .flip-card {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 700px) {
+  .flip-card {
+    height: 43vh;
+  }
+}
+
 @media (min-width: 768px) {
   .flip-card {
     width: 40vw;
-    height: 45vh;
+    height: 35vh;
   }
 }
 
 @media (min-width: 998px) {
   .flip-card {
     width: 34vw;
-    height: 45vh;
-  }
-}
-
-@media (min-width: 1180px) {
-  .flip-card {
-    height: 46vh;
   }
 }
 
@@ -554,6 +629,12 @@ header {
   .flip-card {
     width: 340px;
     height: 45vh;
+  }
+}
+
+@media (min-width: 1400px) {
+  .flip-card {
+    height: 36vh;
   }
 }
 
@@ -606,6 +687,22 @@ header {
   color: #17252A;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flip-card-back h3 {
+  font-size: 15px;
+  border-bottom: 2px #3AAfA9 solid;
+  width: 50%;
 }
 
 .course-wrapper {
