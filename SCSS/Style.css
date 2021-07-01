@@ -403,7 +403,13 @@ header {
 
 @media (min-width: 768px) {
   .project-background {
-    height: 200vh;
+    height: 155vh;
+  }
+}
+
+@media (min-width: 998px) {
+  .project-background {
+    height: 155vh;
   }
 }
 
@@ -527,21 +533,27 @@ header {
 @media (min-width: 768px) {
   .flip-card {
     width: 40vw;
-    height: 35vh;
+    height: 45vh;
   }
 }
 
 @media (min-width: 998px) {
   .flip-card {
     width: 34vw;
-    height: 35vh;
+    height: 45vh;
+  }
+}
+
+@media (min-width: 1180px) {
+  .flip-card {
+    height: 46vh;
   }
 }
 
 @media (min-width: 1208px) {
   .flip-card {
     width: 340px;
-    height: 55vh;
+    height: 45vh;
   }
 }
 
