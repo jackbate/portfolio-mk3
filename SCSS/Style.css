@@ -398,6 +398,19 @@ header {
 .project-background {
   background-color: #DEF2F1;
   padding: 10px 0px;
+  height: 300vh;
+}
+
+@media (min-width: 768px) {
+  .project-background {
+    height: 200vh;
+  }
+}
+
+@media (min-width: 1208px) {
+  .project-background {
+    height: 120vh;
+  }
 }
 
 .project-title {
@@ -493,6 +506,94 @@ header {
   .project-img {
     width: 340px;
   }
+}
+
+.flip-card {
+  width: 85vw;
+  height: 44vh;
+  border: 3px #DEF2F1 solid;
+  background-color: #FEFFFF;
+  text-align: center;
+  margin: 5px 10px;
+  border-radius: 15px;
+  border-color: #FEFFFF;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  border: 1px solid transparent;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+@media (min-width: 768px) {
+  .flip-card {
+    width: 40vw;
+    height: 35vh;
+  }
+}
+
+@media (min-width: 998px) {
+  .flip-card {
+    width: 34vw;
+    height: 35vh;
+  }
+}
+
+@media (min-width: 1208px) {
+  .flip-card {
+    width: 340px;
+    height: 55vh;
+  }
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+/* Do a horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.flip-card-front p, .flip-card-back p {
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #FEFFFF;
+  color: #17252A;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #DEF2F1;
+  color: #17252A;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .course-wrapper {
