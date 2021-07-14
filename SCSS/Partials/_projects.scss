@@ -17,19 +17,19 @@
     &-background{
         background-color: $tertiary;
         padding: 10px 0px;
-        height: 300vh;
-        @media (min-width:768px){
-            height: 155vh;
-        }
-        @media (min-width:998px){
-            height: 120vh;
-        }
-        @media (min-width:1208px){
-            height: 103vh;
-        }
-        @media (min-width:1400px){
-            height: 85vh;
-        }
+        // height: 300vh;
+        // @media (min-width:768px){
+        //     height: 155vh;
+        // }
+        // @media (min-width:998px){
+        //     height: 120vh;
+        // }
+        // @media (min-width:1208px){
+        //     height: 103vh;
+        // }
+        // @media (min-width:1400px){
+        //     height: 85vh;
+        // }
     }
     &-title{
         margin-bottom: 10px;
@@ -130,6 +130,7 @@
 }
 
 .project-img{
+    overflow: hidden;
     width: 80vw;
     border-radius: 5px;
     @media (min-width:768px){
@@ -145,8 +146,9 @@
 }
 
 .flip-card {
+        // overflow: hidden;
         width: 85vw;
-        height: 38vh;
+        height: 45vh;
         border: 3px $tertiary solid;
         background-color: $secondary;
         text-align: center;
@@ -160,6 +162,9 @@
         // background-color: transparent;
         border: 1px solid transparent;
         perspective: 1000px;
+        @media (min-width:400px){
+            height: 40vh;
+        }
         @media (min-width:600px){
             height: 40vh;
         }
@@ -178,7 +183,13 @@
             height: 45vh;
         }
         @media (min-width:1400px){
-            height: 36vh;
+            height: 40vh;
+        }
+        // @media(min-height:800){
+        //     height: 40vh;
+        // }
+        @media (min-height:1360px){
+            height: 27vh;
         }
   }
   
@@ -193,9 +204,10 @@
   }
   
   /* Do a horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
+  .flip-card:hover .flip-card-inner  {
     transform: rotateY(180deg);
   }
+  
   
   /* Position the front and back side */
   .flip-card-front, .flip-card-back {
@@ -221,7 +233,7 @@
   
   /* Style the back side */
   .flip-card-back {
-    background-color: $tertiary;
+    background-color: $secondary;
     color: $darkestblue;
     transform: rotateY(180deg);
     display: flex;

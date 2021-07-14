@@ -13,38 +13,68 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
         <!-- link to font awesome -->
         <script src="https://kit.fontawesome.com/b466982dd8.js" crossorigin="anonymous"></script>
+
+        <!-- animsition.css -->
+        <link rel="stylesheet" href="/animsition/animsition.min.css">
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        
     </head>
-
-    <div class="nav-menu">
-        <i class="fas fa-bars"></i>
-    </div>
-    <div class="navbar">
-        <div class="nav-container">
-            <div class="nav-letter">
-                <h2><a href="/index.html">J</a></h2>
-            </div>
-            <div class="nav-items">
-                <a class="selected">
-                    About Me
-                </a>
-                <a href="/index.html"> 
-                    My Portfolio
-                </a>
-                <a href="#">
-                    SCS Scheme
-                </a>
-                <a href="#">
-                    Contact Me
-                </a>
-            </div>
-            <div class="nav-social">
-                <a href="#" class="nav-fb"><i class="fab fa-facebook-square"></i></a>
-                <a href="#" class="nav-li"><i class="fab fa-linkedin"></i></a>
-            </div>
-        </div>
-    </div>
-
     <body>
+        <!-- animsition.js -->
+        <script src="/animsition/animsition.min.js"></script>
+
+        <script src="/js/_menu.js"></script>
+
+        <div id="mySidebar" class="sidebar navbar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="nav-container">
+                <div class="nav-letter">
+                    <h2><a href="/index.html" 
+                        id="letter"
+                        class="animsition-overlay animsition-link"
+                        data-animsition-overlay="true"
+                        data-animsition-in-class="overlay-slide-in-bottom"
+                        data-animsition-in-duration="1000"
+                        data-animsition-out-class="overlay-slide-out-bottom"
+                        data-animsition-out-duration="800"
+                        >J</a>
+                    </h2>
+                </div>
+                <div class="nav-items animsition-overlay" data-animsition-overlay="true">
+                    <a 
+                    href="/about.html" 
+                    class="animsition-overlay animsition-link"
+                    data-animsition-overlay="true"
+                    data-animsition-in-class="overlay-slide-in-bottom"
+                    data-animsition-in-duration="1000"
+                    data-animsition-out-class="overlay-slide-out-bottom"
+                    data-animsition-out-duration="800"
+                    >
+                    About Me
+                    </a>
+                    <a href="#projects"> 
+                        My Portfolio
+                    </a>
+                    <a href="#course">
+                        SCS Scheme
+                    </a>
+                    <a href="#contact">
+                        Contact Me
+                    </a>
+                </div>
+                <div class="nav-social">
+                    <a href="#" class="nav-fb"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#" class="nav-li"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+          </div>
+          
+          <div id="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+          </div>
+        </div>
+
         <div class="about-background" id="about">
             <h1 class="section-title about-title">A bit about me</h1>
             <div class="content-wrapper">

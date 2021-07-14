@@ -1,26 +1,12 @@
 .navbar{
-    display: none;
-    @media (min-width:1400px){
-        display: block;
-        width: 13vw;
-        height: 100%;
-        background-color: $secondary;
-        border-right: 4px $darkerblue solid;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1;
-    }
-    
+    height: 100%;
+    background-color: $secondary;
+    border-right: 4px $darkerblue solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;   
 }
-// testing code for the menu
-// .menuOn{
-//     display: block;
-// }
-
-// .menuOff{
-//     display: none;
-// }
 
 .nav{
     &-container{
@@ -30,28 +16,6 @@
         a{
             text-decoration: none;
         }
-    }
-    &-menu{
-        position: fixed;
-        z-index: 1;
-        top: 10px;
-        left: 10px;
-        width: 45px;
-        height: 40px;
-        font-size: 25px;
-        background-color: $darkerblue;
-        color: $tertiary;
-        text-align: center;
-        border-radius: 10px;
-        padding-top: 5px;
-        &:hover{
-            color: $darkerblue;
-            background-color: $tertiary;
-        }
-        @media (min-width:1400px){
-            display: none;
-        }
-
     }
     &-letter{
         text-align: center;
@@ -116,3 +80,97 @@
         }
     }
 }
+
+// test
+
+
+#main_nav {
+    display: none;
+}
+
+
+ /* The sidebar menu */
+ .sidebar {
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+    display: block;
+    width: 13vw;
+    height: 100%;
+    background-color: $secondary;
+    border-right: 4px $darkerblue solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    text-decoration: none;
+    color: $darkerblue;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover, a:active{
+    color: $primary;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 25px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: transparent;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    z-index: 1;
+    position: fixed;
+    top: 2px;
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 45px;
+    height: 40px;
+    font-size: 25px;
+    background-color: $darkerblue;
+    color: $tertiary;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 5px;
+    border: none;
+    padding: 5px;
+    &:hover, &:active{
+        color: $darkerblue;
+        background-color: $tertiary;
+    }
+    @media(min-width:750px;){
+        z-index: 0;
+    }
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  } 

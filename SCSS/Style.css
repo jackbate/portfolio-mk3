@@ -111,37 +111,7 @@ body a:hover {
 
 @media (min-width: 1400px) {
   .content-wrapper {
-    margin: 0 auto 0 15%;
-  }
-}
-
-@media (min-width: 1500px) {
-  .content-wrapper {
-    margin: 0 auto 0 17%;
-  }
-}
-
-@media (min-width: 1600px) {
-  .content-wrapper {
-    margin: 0 auto 0 20%;
-  }
-}
-
-@media (min-width: 1700px) {
-  .content-wrapper {
-    margin: 0 auto 0 22%;
-  }
-}
-
-@media (min-width: 1800px) {
-  .content-wrapper {
-    margin: 0 auto 0 23%;
-  }
-}
-
-@media (min-width: 1920px) {
-  .content-wrapper {
-    margin: 0 auto 0 25%;
+    margin: 0 auto;
   }
 }
 
@@ -251,13 +221,7 @@ header {
     display: block;
     position: absolute;
     top: 86%;
-    right: 45.7%;
-  }
-}
-
-@media (min-width: 1208px) and (min-width: 1400px) {
-  .scroll {
-    right: 40%;
+    right: 46.75%;
   }
 }
 
@@ -398,31 +362,6 @@ header {
 .project-background {
   background-color: #DEF2F1;
   padding: 10px 0px;
-  height: 300vh;
-}
-
-@media (min-width: 768px) {
-  .project-background {
-    height: 155vh;
-  }
-}
-
-@media (min-width: 998px) {
-  .project-background {
-    height: 120vh;
-  }
-}
-
-@media (min-width: 1208px) {
-  .project-background {
-    height: 103vh;
-  }
-}
-
-@media (min-width: 1400px) {
-  .project-background {
-    height: 85vh;
-  }
 }
 
 .project-title {
@@ -562,6 +501,7 @@ header {
 }
 
 .project-img {
+  overflow: hidden;
   width: 80vw;
   border-radius: 5px;
 }
@@ -586,7 +526,7 @@ header {
 
 .flip-card {
   width: 85vw;
-  height: 38vh;
+  height: 45vh;
   border: 3px #DEF2F1 solid;
   background-color: #FEFFFF;
   text-align: center;
@@ -598,6 +538,12 @@ header {
   border: 1px solid transparent;
   -webkit-perspective: 1000px;
           perspective: 1000px;
+}
+
+@media (min-width: 400px) {
+  .flip-card {
+    height: 40vh;
+  }
 }
 
 @media (min-width: 600px) {
@@ -634,7 +580,13 @@ header {
 
 @media (min-width: 1400px) {
   .flip-card {
-    height: 36vh;
+    height: 40vh;
+  }
+}
+
+@media (min-height: 1360px) {
+  .flip-card {
+    height: 27vh;
   }
 }
 
@@ -683,7 +635,7 @@ header {
 
 /* Style the back side */
 .flip-card-back {
-  background-color: #DEF2F1;
+  background-color: #FEFFFF;
   color: #17252A;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
@@ -940,21 +892,13 @@ header {
 }
 
 .navbar {
-  display: none;
-}
-
-@media (min-width: 1400px) {
-  .navbar {
-    display: block;
-    width: 13vw;
-    height: 100%;
-    background-color: #FEFFFF;
-    border-right: 4px #2B7A78 solid;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
+  height: 100%;
+  background-color: #FEFFFF;
+  border-right: 4px #2B7A78 solid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .nav-container {
@@ -972,32 +916,6 @@ header {
 
 .nav-container a {
   text-decoration: none;
-}
-
-.nav-menu {
-  position: fixed;
-  z-index: 1;
-  top: 10px;
-  left: 10px;
-  width: 45px;
-  height: 40px;
-  font-size: 25px;
-  background-color: #2B7A78;
-  color: #DEF2F1;
-  text-align: center;
-  border-radius: 10px;
-  padding-top: 5px;
-}
-
-.nav-menu:hover {
-  color: #2B7A78;
-  background-color: #DEF2F1;
-}
-
-@media (min-width: 1400px) {
-  .nav-menu {
-    display: none;
-  }
 }
 
 .nav-letter {
@@ -1087,5 +1005,103 @@ header {
 
 .nav-li:hover {
   color: #0072b1;
+}
+
+#main_nav {
+  display: none;
+}
+
+/* The sidebar menu */
+.sidebar {
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidebar */
+  display: block;
+  width: 13vw;
+  height: 100%;
+  background-color: #FEFFFF;
+  border-right: 4px #2B7A78 solid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* The sidebar links */
+.sidebar a {
+  text-decoration: none;
+  color: #2B7A78;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover, a:active {
+  color: #3AAfA9;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 25px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: transparent;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  position: fixed;
+  top: 2px;
+  -webkit-transition: margin-left .5s;
+  transition: margin-left .5s;
+  /* If you want a transition effect */
+  padding: 20px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 45px;
+  height: 40px;
+  font-size: 25px;
+  background-color: #2B7A78;
+  color: #DEF2F1;
+  text-align: center;
+  border-radius: 10px;
+  padding-top: 5px;
+  border: none;
+  padding: 5px;
+}
+
+#main:hover, #main:active {
+  color: #2B7A78;
+  background-color: #DEF2F1;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=Style.css.map */
