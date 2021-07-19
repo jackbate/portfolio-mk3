@@ -89,21 +89,35 @@ header{
 }
 
 .typewriter h2 {
-    height: 44.2px;
+    height: 24.2px;
+    width: 125px;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid orange; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    // letter-spacing: .15em; /* Adjust as needed */
+    margin: 0 auto 0 0; /* Gives that scrolling effect as the typing happens */
     animation: 
-      typing 2.5s steps(40, end),
+      typing 1.75s steps(18, end),
       blink-caret .75s step-end infinite;
   }
   
+  .typewriter h2 :nth-child(2){
+    height: 24.2px;
+    width: 125px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto 0 0; /* Gives that scrolling effect as the typing happens */
+    display: none;
+    animation-delay: 2s;
+    animation: 
+      typing 1.75s steps(18, end),
+      blink-caret .75s step-end infinite;
+  }
+
   /* The typing effect */
   @keyframes typing {
     from { width: 0 }
-    to { width: 100% }
+    to { width: 80% }
   }
   
   /* The typewriter cursor effect */

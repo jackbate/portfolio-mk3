@@ -162,7 +162,8 @@
     padding: 5px;
     &:hover, &:active{
         color: $darkerblue;
-        background-color: $tertiary;
+        background-color: $primary;
+        transition: 0.3s;
     }
     @media(min-width:750px){
         z-index: 0;

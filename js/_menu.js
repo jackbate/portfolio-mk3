@@ -34,12 +34,6 @@ $(document).ready(function() {
   });
 
 
-
-// const nav = document.getElementById('nav-items')
-
-// for(var i=0;i < nav.childElementCount;i++){
-//   document.childNodes.forEach()
-
 /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
 function openNav() {
   document.getElementById("mySidebar").style.width = "250px";
@@ -51,3 +45,4 @@ function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
 } 
+

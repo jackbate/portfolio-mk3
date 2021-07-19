@@ -226,17 +226,36 @@ header {
 }
 
 .typewriter h2 {
-  height: 44.2px;
+  height: 24.2px;
+  width: 125px;
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange;
   /* The typwriter cursor */
   white-space: nowrap;
   /* Keeps the content on a single line */
-  margin: 0 auto;
+  margin: 0 auto 0 0;
   /* Gives that scrolling effect as the typing happens */
-  -webkit-animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite;
-          animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  -webkit-animation: typing 1.75s steps(18, end), blink-caret 0.75s step-end infinite;
+          animation: typing 1.75s steps(18, end), blink-caret 0.75s step-end infinite;
+}
+
+.typewriter h2 :nth-child(2) {
+  height: 24.2px;
+  width: 125px;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto 0 0;
+  /* Gives that scrolling effect as the typing happens */
+  display: none;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation: typing 1.75s steps(18, end), blink-caret 0.75s step-end infinite;
+          animation: typing 1.75s steps(18, end), blink-caret 0.75s step-end infinite;
 }
 
 /* The typing effect */
@@ -245,7 +264,7 @@ header {
     width: 0;
   }
   to {
-    width: 100%;
+    width: 80%;
   }
 }
 @keyframes typing {
@@ -253,7 +272,7 @@ header {
     width: 0;
   }
   to {
-    width: 100%;
+    width: 80%;
   }
 }
 
@@ -1143,7 +1162,9 @@ header {
 
 #main:hover, #main:active {
   color: #2B7A78;
-  background-color: #DEF2F1;
+  background-color: #3AAfA9;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 @media (min-width: 750px) {
