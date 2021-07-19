@@ -305,12 +305,6 @@ header {
   margin: 0 auto 70px;
 }
 
-@media (min-width: 1400px) {
-  .about-title {
-    margin-left: 50%;
-  }
-}
-
 .about-container {
   display: -webkit-box;
   display: -ms-flexbox;
