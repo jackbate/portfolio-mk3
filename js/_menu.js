@@ -1,34 +1,12 @@
-// function buttonclick(){
-//     var menuList = document.getElementById("menu");
-//     if (menuList.className == "menuOff"){
-//         menuList.className = "menuOn";
-//     }
-//     else{
-//         menuList.className = "menuOff";
-//     }
-// }
 
-// console.log("js is still working")
-
-
-// // var nav = document.getElementById('access_nav'),
-// //     body = document.body;
-
-// // nav.addEventListener('click', function(e) {
-// //     body.className = body.className? '' : 'with_nav';
-// //     e.preventDefault();
-// // });
-
-// const menu = document.querySelector('menu');
-// const nav_menu = document.getElementById("nav_menu");
-
-// nav_menu.addEventListener('click', () => {
-//     if(menu.style.display == 'none'){
-//         menu.style.display = 'block'
-//     } else{
-//         menu.style.display = 'none'
-//     }
-// });
+$('animistion').animsition({
+  inOverlay: "true",
+  inClass: "overlay-slide-in-bottom",
+  inDuration: "1000",
+  outClass:"overlay-slide-out-bottom",
+  outDuration: "800",
+  linkElement: "header a"
+})
 
 $(document).ready(function() {
     $(".animsition-overlay").animsition({

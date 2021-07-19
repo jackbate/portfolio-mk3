@@ -225,6 +225,56 @@ header {
   }
 }
 
+.typewriter h2 {
+  height: 44.2px;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  -webkit-animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite;
+          animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@-webkit-keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
 .about-background {
   background-color: #FEFFFF;
   margin-top: 15vh;
@@ -1069,6 +1119,7 @@ header {
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
+  z-index: 1;
   position: fixed;
   top: 2px;
   -webkit-transition: margin-left .5s;
@@ -1093,6 +1144,12 @@ header {
 #main:hover, #main:active {
   color: #2B7A78;
   background-color: #DEF2F1;
+}
+
+@media (min-width: 750px) {
+  #main {
+    z-index: 0;
+  }
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
