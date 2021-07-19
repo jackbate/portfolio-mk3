@@ -95,7 +95,7 @@
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
     display: block;
-    width: 13vw;
+    width: 0;
     height: 100%;
     background-color: $secondary;
     border-right: 4px $darkerblue solid;
@@ -103,6 +103,9 @@
     top: 0;
     left: 0;
     z-index: 1;
+    @media(min-width:1208px){
+        width: 13vw;
+    }
   }
   
   /* The sidebar links */

@@ -234,28 +234,18 @@ header {
   /* The typwriter cursor */
   white-space: nowrap;
   /* Keeps the content on a single line */
-  margin: 0 auto 0 0;
+  margin: 0 auto;
   /* Gives that scrolling effect as the typing happens */
-  -webkit-animation: typing 1.75s steps(18, end), blink-caret 0.75s step-end infinite;
-          animation: typing 1.75s steps(18, end), blink-caret 0.75s step-end infinite;
+  -webkit-animation: typing 2.25s steps(40, end), blink-caret 0.75s step-end infinite;
+          animation: typing 2.25s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
-.typewriter h2 :nth-child(2) {
-  height: 24.2px;
-  width: 125px;
-  overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange;
-  /* The typwriter cursor */
-  white-space: nowrap;
-  /* Keeps the content on a single line */
-  margin: 0 auto 0 0;
-  /* Gives that scrolling effect as the typing happens */
-  display: none;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-  -webkit-animation: typing 1.75s steps(18, end), blink-caret 0.75s step-end infinite;
-          animation: typing 1.75s steps(18, end), blink-caret 0.75s step-end infinite;
+@media (min-width: 1208px) {
+  .typewriter h2 {
+    margin: 0 auto 0 0;
+    -webkit-animation: typing 1.75s steps(18, end), blink-caret 0.75s step-end infinite;
+            animation: typing 1.75s steps(18, end), blink-caret 0.75s step-end infinite;
+  }
 }
 
 /* The typing effect */
@@ -264,7 +254,7 @@ header {
     width: 0;
   }
   to {
-    width: 80%;
+    width: 37%;
   }
 }
 @keyframes typing {
@@ -272,7 +262,26 @@ header {
     width: 0;
   }
   to {
-    width: 80%;
+    width: 37%;
+  }
+}
+
+@media (min-width: 1208px) {
+  @-webkit-keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 80%;
+    }
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 80%;
+    }
   }
 }
 
@@ -1084,7 +1093,7 @@ header {
   transition: 0.5s;
   /* 0.5 second transition effect to slide in the sidebar */
   display: block;
-  width: 13vw;
+  width: 0;
   height: 100%;
   background-color: #FEFFFF;
   border-right: 4px #2B7A78 solid;
@@ -1092,6 +1101,12 @@ header {
   top: 0;
   left: 0;
   z-index: 1;
+}
+
+@media (min-width: 1208px) {
+  .sidebar {
+    width: 13vw;
+  }
 }
 
 /* The sidebar links */
