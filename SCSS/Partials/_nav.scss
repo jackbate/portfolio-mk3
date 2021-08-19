@@ -104,7 +104,7 @@
     left: 0;
     z-index: 1;
     @media(min-width:1208px){
-        width: 13vw;
+        width: 0;
     }
   }
   
@@ -178,3 +178,36 @@
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
   } 
+
+  .container{
+    display: inline-block;
+    cursor: pointer;
+    width: 33px;
+    height: 19px;
+    padding-bottom: 3px;
+    }
+    
+    .bar1, .bar2, .bar3 {
+    width: 33px;
+    height: 3px;
+    background-color: $tertiary;
+    margin: 6px 0;
+    transition: 0.4s;
+    }
+    
+    /* Rotate first bar */
+    .change .bar1 {
+    -webkit-transform: rotate(-225deg)translate(7px, -7px);
+    transform: rotate(-225deg)translate(7px, -7px);
+    }
+    
+    /* Fade out the second bar */
+    .change .bar2 {
+    opacity: 0;
+    }
+    
+    /* Rotate last bar */
+    .change .bar3 {
+    -webkit-transform: rotate(225deg) translate(6px, 5px) ;
+    transform: rotate(225deg) translate(6px, 5px) ;
+    }

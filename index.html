@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="Home | Jack Bate's Portfolio">
@@ -46,45 +46,65 @@
             
             <script  src="/js/_menu.js"></script> 
             <!-- testing code for menu -->
-            <div id="mySidebar" class="sidebar navbar">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="nav-container">
-                    <div class="nav-letter">
-                        <h2><a href="#top" id="letter">J</a></h2>
-                    </div>
-                    <div class="nav-items animsition-overlay" data-animsition-overlay="true">
-                        <a 
-                        href="/about.html" 
-                        class="animsition-overlay animsition-link"
-                        data-animsition-overlay="true"
-                        data-animsition-in-class="overlay-slide-in-bottom"
-                        data-animsition-in-duration="1000"
-                        data-animsition-out-class="overlay-slide-out-bottom"
-                        data-animsition-out-duration="800"
-                        >
-                        About Me
-                        </a>
-                        <a href="#projects"> 
-                            My Portfolio
-                        </a>
-                        <a href="#course">
-                            SCS Scheme
-                        </a>
-                        <a href="#contact">
-                            Contact Me
-                        </a>
-                    </div>
-                    <div class="nav-social">
-                        <a href="#" class="nav-fb"><i class="fab fa-facebook-square"></i></a>
-                        <a href="#" class="nav-li"><i class="fab fa-linkedin"></i></a>
+                <div id="mySidebar" class="sidebar navbar">
+                    <div class="nav-container">
+                        <div class="nav-letter">
+                            <h2><a href="#top" id="letter">J</a></h2>
+                        </div>
+                        <div class="nav-items animsition-overlay" data-animsition-overlay="true">
+                            <a 
+                            href="/about.html" 
+                            class="animsition-overlay animsition-link"
+                            data-animsition-overlay="true"
+                            data-animsition-in-class="overlay-slide-in-bottom"
+                            data-animsition-in-duration="1000"
+                            data-animsition-out-class="overlay-slide-out-bottom"
+                            data-animsition-out-duration="800"
+                            >
+                            About Me
+                            </a>
+                            <a href="#projects"> 
+                                My Portfolio
+                            </a>
+                            <a href="#course">
+                                SCS Scheme
+                            </a>
+                            <a href="/codesnip.html" 
+                            class="animsition-overlay animsition-link"
+                            data-animsition-overlay="true"
+                            data-animsition-in-class="overlay-slide-in-bottom"
+                            data-animsition-in-duration="1000"
+                            data-animsition-out-class="overlay-slide-out-bottom"
+                            data-animsition-out-duration="800">
+                               Code Snippets 
+                            </a>
+                            <a href="#contact">
+                                Contact Me
+                            </a>
+                        </div>
+                        <div class="nav-social">
+                            <a href="#" class="nav-fb"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#" class="nav-li"><i class="fab fa-linkedin"></i></a>
+                        </div>
                     </div>
                 </div>
-              </div>
               
-              <div id="main">
-                <button class="openbtn" onclick="openNav()">&#9776;</button>
-              </div>
-            </div>
+                <div id="main">
+                    <a class="openbtn" onclick="myFunction(this); toggleSlideMenu(this);">
+                        <div class="container">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </a>
+                </div>
+                
+                <script>
+                    function myFunction(x) {
+                        x.classList.toggle("change");
+                        x.classList.toggle("menu-display");
+                    }
+                </script>
         </header>
 
         <section>
@@ -103,7 +123,7 @@
                             </div>
                             <div class="flip-card-back">
                                 <h3>Languages Used in the Project</h3>
-                                <div class="project-languages">
+                                <div class="project-languages">            
                                     <div class="project-html">
                                         <i class="fab fa-html5"></i>
                                         <h4>HTML</h4>
@@ -119,10 +139,11 @@
                                         <h4>JavaScript</h4>
                                     </div>
                                 </div>
-                                <a href="https://jack-bate.netmatters-scs.co.uk/recreationOfNetmattersSite" class="project-link" id="project-link" target="_blank">Check out the Project!</a>
+                                <a href="https://jack-bate.netmatters-scs.co.uk/recreationOfNetmattersSite" class="project-link" id="project-link1" target="_blank">Check out the Project!</a>
                             </div>
                             </div>
                         </div>  
+                    
                         <div class="flip-card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
@@ -150,7 +171,7 @@
                                         <h4>JavaScript</h4>
                                     </div>
                                 </div>
-                                    <a href="https://jack-bate.netmatters-scs.co.uk/inspireNorfolkPairsProject" class="project-link" id="project-link" target="_blank">Check out the Project!</a>
+                                    <a href="https://jack-bate.netmatters-scs.co.uk/inspireNorfolkPairsProject" class="project-link" id="project-link2" target="_blank">Check out the Project!</a>
                                 </div>
                             </div>
                         </div>
@@ -181,7 +202,7 @@
                                             <h4>JavaScript</h4>
                                         </div>
                                     </div>
-                                <a href="#" class="project-link" id="project-link">Check out the Project!</a>
+                                <a href="#" class="project-link" id="project-link3">Check out the Project!</a>
                                 </div>
                             </div>
                         </div>
@@ -212,7 +233,7 @@
                                             <h4>JavaScript</h4>
                                         </div>
                                     </div>
-                                <a href="#" class="project-link" id="project-link">Check out the Project!</a>
+                                <a href="#" class="project-link" id="project-link4">Check out the Project!</a>
                                 </div>
                             </div>
                         </div>
@@ -243,7 +264,7 @@
                                             <h4>JavaScript</h4>
                                         </div>
                                     </div>
-                                <a href="#" class="project-link" id="project-link">Check out the Project!</a>
+                                <a href="#" class="project-link" id="project-link5">Check out the Project!</a>
                                 </div>
                             </div>
                         </div>
@@ -274,70 +295,10 @@
                                             <h4>JavaScript</h4>
                                         </div>
                                     </div> 
-                                <a href="#" class="project-link" id="project-link">Check out the Project!</a>
+                                <a href="#" class="project-link" id="project-link6">Check out the Project!</a>
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="project-1 project-box">
-                            <div class="img-container">
-                                <img src="../Images/project1.png" alt="project 1" class="project-img">
-                            </div>
-                            <div class="project-desc">
-                                <h3>The Netmatters Homepage</h3>
-                                <p>This is the first project of the course where i had created a replica of the netmatters homepage including with the use of HTML, CSS/ SCSS and JavaScript as a test of my ability</p>
-                                <a href="#" class="project-link" id="project-link">Check out the Project!</a>
-                            </div>
-                        </div>
-                        <div class="project-2 project-box">
-                            <div class="img-container">
-                                <img src="../Images/project2.png" alt="project 2" class="project-img">
-                            </div>
-                            <div class="project-desc">
-                                <h3>Inspire Norfolk</h3>
-                                <p>For this project I had worked collaboratively with a fellow Scion to produce a comprehensive 6 webpage site with only the homepage to design the website. This was to test our abilities as collaborative developers as well as refining our HTML/CSS Skils as well.</p>
-                                <a href="#" class="project-link" id="project-link">Check out the Project!</a>
-                            </div>
-                        </div>
-                        <div class="project-3 project-box">
-                            <div class="img-container">
-                                <img src="../Images/project1.png" alt="project 3" class="project-img">
-                            </div>
-                            <div class="project-desc">
-                                <h3>lorem Ipsum</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam semper rutrum rutrum. Suspendisse in est molestie, tincidunt orci a, mattis ante. Sed semper vestibulum eleifend.</p>
-                                <a href="#" class="project-link" id="project-link">Check out the Project!</a>
-                            </div>
-                        </div>
-                        <div class="project-4 project-box">
-                            <div class="img-container">
-                                <img src="../Images/project2.png" alt="project 4" class="project-img">
-                            </div>
-                            <div class="project-desc">
-                                <h3>loreum ipsum</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam semper rutrum rutrum. Suspendisse in est molestie, tincidunt orci a, mattis ante. Sed semper vestibulum eleifend.</p>
-                                <a href="#" class="project-link" id="project-link">Check out the Project!</a>
-                            </div>
-                        </div>
-                        <div class="project-5 project-box">
-                            <div class="img-container">
-                                <img src="../Images/project1.png" alt="project 5" class="project-img">
-                            </div>
-                            <div class="project-desc">
-                                <h3>loreum ipsum</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam semper rutrum rutrum. Suspendisse in est molestie, tincidunt orci a, mattis ante. Sed semper vestibulum eleifend.</p>
-                                <a href="#" class="project-link" id="project-link">Check out the Project!</a>
-                            </div>
-                        </div>
-                        <div class="project-6 project-box">
-                            <div class="img-container">
-                                <img src="../Images/project2.png" alt="project 6" class="project-img">
-                            </div>
-                            <div class="project-desc">
-                                <h3>loreum Ipsum</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam semper rutrum rutrum. Suspendisse in est molestie, tincidunt orci a, mattis ante. Sed semper vestibulum eleifend.</p>
-                                <a href="#" class="project-link" id="project-link">Check out the Project!</a>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
             </div>

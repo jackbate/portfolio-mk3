@@ -1,0 +1,96 @@
+.codesnip{
+    &-title{
+        margin: 0 auto;
+        width: 250px;
+        margin-top: 10vh;
+    }
+}
+
+
+.code-box {
+    margin-top: 30px;
+    position: relative;
+    padding: 0;
+    width: 320px;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: $yellow;
+    border-radius: 10px;
+    box-shadow: -12px -7px 22px 10px rgba(0,0,0,0.26);
+    transition-duration: 0.6s;
+    margin-right: 10px;
+    &:nth-child(3){
+        @media(min-width: 768px){
+            left: 50%;
+            margin-left: -150px;
+        }
+        @media(min-width: 1208px){
+            margin-left: 0;
+            left: 0;
+        }
+    }
+    &:hover{
+        box-shadow: 12px 7px 22px 10px rgba(0,0,0,0.26);
+        transition-duration: 0.6s;
+    }
+    img{
+        margin: auto;
+        width: 300px;
+        padding: 10px;
+        padding-right: 0px;
+    }
+  }
+  
+  .code-content {
+    opacity: 0;
+    font-size: 18px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: $tertiary;
+    padding: 0 10px;
+    background-color: rgba(200, 200, 200, 0.5);
+    width: 280px;
+    height: 496px;
+    -webkit-transition: all 400ms ease-out;
+    -moz-transition: all 400ms ease-out;
+    -o-transition: all 400ms ease-out;
+    -ms-transition: all 400ms ease-out;
+    transition: all 400ms ease-out;
+    text-align: center;
+  }
+  
+.code-text{
+    bottom: 20px;
+}
+
+  .code-box .code-content:hover {
+    opacity: 1;
+  }
+  
+  .code-box .code-content .code-text {
+    height: 0;
+    opacity: 1;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+  }
+  
+  .code-box .code-content:hover .code-text {
+    opacity: 1;
+    transform: translateY(200px);
+    -webkit-transform: translateY(200px);
+  }
+
+  .code-box .code-content:active .code-text {
+    opacity: 1;
+    transform: translateY(200px);
+    -webkit-transform: translateY(200px);
+  }
+
+  .code-positioning{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
